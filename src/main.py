@@ -26,7 +26,7 @@ def main():
             selected_remark = remark()
             audio = MP3(selected_remark)
             mixer.music.load(selected_remark)
-            time.sleep(2)
+            time.sleep(3)
             pydirectinput.keyDown('v')
             mixer.music.play()
             time.sleep(float(audio.info.length)+.25)
