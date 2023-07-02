@@ -23,6 +23,7 @@ def main():
         death, last_death_index = did_you_die_though(path, last_death_index)
         print(death, last_death_index)
         if death == True:
+            #thread this and the PID check?
             selected_remark = remark()
             audio = MP3(selected_remark)
             mixer.music.load(selected_remark)
